@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/068b0db265.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Saurabh Kumar Singh 1.png" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hi</p>
+                <h1>I'm <span>Saurabh Kumar Singh</span> <br></h1>
+            </div>
+        </div>
+    </div> 
+
+
+<!-- about---------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="about-col-1">
+                    <img src="images/my pic.jpeg">
+                </div> -->
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm Saurabh Kumar Singh, a Bachelor's student in Electronics and Communication Engineering at KIET Group of Institutions. I'm a front-end developer with a solid foundation in C++ and C. My passion lies in creating intuitive user interfaces and tackling coding challenges. I'm always eager to apply my skills to innovative projects and push the boundaries of technology.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(skills)">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab(experience)">Experience</p> -->
+                        <p class="tab-links" onclick="opentab(education)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Developement</span><br>Web App Developement</li>
+                            <li><span>Coding Language</span><br>C++,C</li>
+                            <li><span>Graphic Design</span><br>Build Illustrative logos and Art</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-contents" id="experience">
+                        <ul>
+                            
+                        </ul>
+                    </div> -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech</span><br>KIET Group of Institutions Ghaziabad</li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- -------------services------------- -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-End Developer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur iusto natus necessitatibus repellendus nemo cumque, dicta amet dolore. Doloremque nostrum aliquam nam sed aspernatur totam maiores maxime est fugiat alias.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Graphic Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laboriosam officia, repudiandae nostrum, sint consequatur ducimus voluptate tempora eum officiis cumque? Aut, amet. Inventore sint eius amet! Nesciunt, porro dolor.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+
+<!-- -----------------portfolio-------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/calculator.jpg">
+                <div class="layer">
+                    <h3>Calculator</h3>
+                    <p>This is just an example</p>
+                    <a href="#">
+                        <i class="fa-solid fa-link"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/thermometer.jpg">
+                <div class="layer">
+                    <h3>Temperature Converter</h3>
+                    <p>This is just an example</p>
+                    <a href="#">
+                        <i class="fa-solid fa-link"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn" >See More</a>
+    </div>
+
+</div>
+<!-- --------------contact--------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1>Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>saurabh.226ec1156@kiet.edu</p>
+                <p><i class="fa-solid fa-square-phone"></i>9693232940</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="#" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copy-right">
+        <p>Copyright @Saurabh Kumar Singh</p>
+    </div>
+</div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzjQ5iMiFYLAmm4STTofUgKwlplBnxTFTxx3mBYuhEM_DtsXkE3o-PQYTK-MAthlEjMsA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
